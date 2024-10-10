@@ -1,16 +1,16 @@
 import java.io.BufferedWriter;
 import java.util.ArrayList;
 
-public class CSVexport extends Export{
+public class CSVexport extends Export {
 
-    private ArrayList<Artikel> csvliste;
-
-    public CSVexport(ArrayList<Artikel> csvliste) {
-        this.csvliste = csvliste;
-    }
 
     @Override
     public void Export(ArrayList<Artikel> list) {
+
+        for (Artikel artikel : list) {
+            System.out.println("Nummer;Bezeichnung;Einkaufspreis;Ablaufdatum;Kategorienummer");
+            System.out.println(artikel.getNummer() + ";" + artikel.getBezeichnung() + ";" + artikel.getEinkaufspreis() + ";" + artikel.getAblaufdatum() + ";" + artikel.getKategorienummer());
+        }
 
     }
 }
