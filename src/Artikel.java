@@ -60,12 +60,12 @@ public class Artikel {
 
 	@Override
 	public String toString() {
-		return
-				 nummer +
-				"," + bezeichnung+
-				"," + einkaufspreis +
-				"," + ablaufdatum +
-				"," + kategorienummer +
-				";";
+		return "Artikel{" +
+				"nummer='" + nummer + '\'' +
+				", bezeichnung='" + bezeichnung + '\'' +
+				", einkaufspreis=" + einkaufspreis +
+				", ablaufdatum=" + ablaufdatum +
+				", kategorienummer=" + kategorienummer +
+				'}';
 	}
 }

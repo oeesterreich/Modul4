@@ -1,10 +1,8 @@
 import java.util.ArrayList;
 
-public class Export {
+public abstract class Export {
 
-    public void Export(ArrayList<Artikel> list)
-    {
+    public abstract void Export(ArrayList<Artikel> list);
 
-    }
 
 }
