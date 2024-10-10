@@ -57,7 +57,15 @@ public class Artikel {
 	public void setKategorienummer(int kategorienummer) {
 		this.kategorienummer = kategorienummer;
 	}
-	
-	
 
+	@Override
+	public String toString() {
+		return
+				 nummer +
+				"," + bezeichnung+
+				"," + einkaufspreis +
+				"," + ablaufdatum +
+				"," + kategorienummer +
+				";";
+	}
 }

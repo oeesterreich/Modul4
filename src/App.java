@@ -8,34 +8,38 @@ public class App {
 		//zu verarbeitende Artikelliste kommt aus untenstehender Hilfsmethode:
 		ArrayList<Artikel> al = artikellisteAusDBDummy();
 		
-		//Je nach Kommandozeilenparameter sollen verschiedene Exporte durchgeführt werden.
-		//In Eclipse können diese Paramter gesetzt werden über (noch ist keiner gesetzt):
-		//über Run->Run Configurations -> Arguments -> Programm Arguments
-		if(args.length>0)
+		//Je nach Kommandozeilenparameter sollen verschiedene Exporte durchgefï¿½hrt werden.
+		//In Eclipse kï¿½nnen diese Paramter gesetzt werden ï¿½ber (noch ist keiner gesetzt):
+		//ï¿½ber Run->Run Configurations -> Arguments -> Programm Arguments
+		/*if(args.length>0)
 		{
 			String parameter = args[0];
 			switch(parameter)
 			{
 			case "CSV":
-				//CSV-Export durchführen
+				//CSV-Export durchfï¿½hren
 				break;
 			case "JSON":
-				//JSON-Export durchführen
+				//JSON-Export durchfï¿½hren
 				break;
 			default:
-				//CSV-Export durchführen
+				//CSV-Export durchfï¿½hren
 				break;
 			}
 		} else //kein Parameter, dann CSV-Export (Standard)
 		{
 			//CSV-Export
+
 		}
+		 */
+		App a = new App();
+		System.out.println(artikellisteAusDBDummy());
 	}
 
 	/**
 	 * Diese Methode liefert eine Beispielliste mit Artikeln,
 	 * wie sie von der Export-Applikation verarbeitet werden soll.
-	 * Später wird diese Methode die Daten aus einer Datenbank holen.
+	 * Spï¿½ter wird diese Methode die Daten aus einer Datenbank holen.
 	 * Das ist aber nicht Teil des aktuellen JAVA Export Prototpyen.
 	 * @return Beispielliste, mit der gearbeitet werden soll.
 	 */
